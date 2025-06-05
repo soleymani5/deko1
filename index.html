@@ -15,26 +15,20 @@
             --highlight-color: #8b0000;
         }
         
-        /* این کد را به بخش style در head اضافه کنید */
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    border: 15px solid var(--primary-color);
-    pointer-events: none;
-    z-index: 1000;
-    box-sizing: border-box;
-    animation: borderPulse 6s infinite;
-}
-
-@keyframes borderPulse {
-    0% { border-color: var(--primary-color); }
-    50% { border-color: var(--secondary-color); }
-    100% { border-color: var(--primary-color); }
-}
+        body {
+            font-family: Tahoma, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            line-height: 1.6;
+            /* حاشیه زیبا برای کل سایت */
+            border: 15px solid var(--primary-color);
+            box-sizing: border-box;
+        }
         
         header {
             background-color: var(--primary-color);
@@ -175,6 +169,7 @@ body::before {
             flex-wrap: wrap;
             gap: 1.5rem;
             margin-top: 2rem;
+             width: 85%;
         }
         
         .service-box {
@@ -359,7 +354,6 @@ body::before {
 
 <header>
     <h1>دکوراسیون سلیمانی</h1>
-    <p>طراحی و اجرای تخصصی سقف‌های کاذب و دکوراسیون داخلی</p>
 </header>
 
 <nav>
@@ -380,6 +374,10 @@ body::before {
             </p>
             
             <ul class="feature-list">
+                <li>
+                    <span class="feature-icon">✓</span>
+                    <span>طراحی و اجرای تخصصی سقف‌های کاذب و دکوراسیون داخلی</span>
+                </li>
                 <li>
                     <span class="feature-icon">✓</span>
                     <span>تیم متخصص با مدرک بین‌المللی از سازمان فنی و حرفه‌ای</span>
@@ -458,12 +456,109 @@ body::before {
     <div id="gallery" class="content">
         <h2>نمونه‌کارها</h2>
         <div class="gallery">
-            <img src="images/project1.jpg" alt="پروژه کناف 1">
-            <img src="images/project2.jpg" alt="پروژه کناف 2">
-            <img src="images/project3.jpg" alt="پروژه کناف 3">
-            <img src="images/project4.jpg" alt="پروژه کناف 4">
-            <img src="images/project5.jpg" alt="پروژه کناف 5">
-            <img src="images/project6.jpg" alt="پروژه کناف 6">
+            <div class="gallery">
+    <img src="images/project1.jpg" alt="پروژه کناف 1">
+    <img src="images/project2.jpg" alt="پروژه کناف 2">
+    <img src="images/project3.jpg" alt="پروژه کناف 3">
+    <img src="images/project4.jpg" alt="پروژه کناف 4">
+    <img src="images/project5.jpg" alt="پروژه کناف 5">
+    <img src="images/project6.jpg" alt="پروژه کناف 6">
+    <img src="images/project7.jpg" alt="پروژه کناف 7">
+    <img src="images/project8.jpg" alt="پروژه کناف 8">
+    <img src="images/project9.jpg" alt="پروژه کناف 9">
+    <img src="images/project10.jpg" alt="پروژه کناف 10">
+    <img src="images/project11.jpg" alt="پروژه کناف 11">
+    <img src="images/project12.jpg" alt="پروژه کناف 12">
+    <img src="images/project13.jpg" alt="پروژه کناف 13">
+    <img src="images/project14.jpg" alt="پروژه کناف 14">
+    <img src="images/project15.jpg" alt="پروژه کناف 15">
+    <img src="images/project16.jpg" alt="پروژه کناف 16">
+    <img src="images/project17.jpg" alt="پروژه کناف 17">
+    <img src="images/project18.jpg" alt="پروژه کناف 18">
+    <img src="images/project19.jpg" alt="پروژه کناف 19">
+    <img src="images/project20.jpg" alt="پروژه کناف 20">
+    <img src="images/project21.jpg" alt="پروژه کناف 21">
+    <img src="images/project22.jpg" alt="پروژه کناف 22">
+    <img src="images/project23.jpg" alt="پروژه کناف 23">
+    <img src="images/project24.jpg" alt="پروژه کناف 24">
+    <img src="images/project25.jpg" alt="پروژه کناف 25">
+    <img src="images/project26.jpg" alt="پروژه کناف 26">
+    <img src="images/project27.jpg" alt="پروژه کناف 27">
+    <img src="images/project28.jpg" alt="پروژه کناف 28">
+    <img src="images/project29.jpg" alt="پروژه کناف 29">
+    <img src="images/project30.jpg" alt="پروژه کناف 30">
+    <img src="images/project31.jpg" alt="پروژه کناف 31">
+    <img src="images/project32.jpg" alt="پروژه کناف 32">
+    <img src="images/project33.jpg" alt="پروژه کناف 33">
+    <img src="images/project34.jpg" alt="پروژه کناف 34">
+    <img src="images/project35.jpg" alt="پروژه کناف 35">
+    <img src="images/project36.jpg" alt="پروژه کناف 36">
+    <img src="images/project37.jpg" alt="پروژه کناف 37">
+    <img src="images/project38.jpg" alt="پروژه کناف 38">
+    <img src="images/project39.jpg" alt="پروژه کناف 39">
+    <img src="images/project40.jpg" alt="پروژه کناف 40">
+    <img src="images/project41.jpg" alt="پروژه کناف 41">
+    <img src="images/project42.jpg" alt="پروژه کناف 42">
+    <img src="images/project43.jpg" alt="پروژه کناف 43">
+    <img src="images/project44.jpg" alt="پروژه کناف 44">
+    <img src="images/project45.jpg" alt="پروژه کناف 45">
+    <img src="images/project46.jpg" alt="پروژه کناف 46">
+    <img src="images/project47.jpg" alt="پروژه کناف 47">
+    <img src="images/project48.jpg" alt="پروژه کناف 48">
+    <img src="images/project49.jpg" alt="پروژه کناف 49">
+    <img src="images/project50.jpg" alt="پروژه کناف 50">
+    <img src="images/project51.jpg" alt="پروژه کناف 51">
+    <img src="images/project52.jpg" alt="پروژه کناف 52">
+    <img src="images/project53.jpg" alt="پروژه کناف 53">
+    <img src="images/project54.jpg" alt="پروژه کناف 54">
+    <img src="images/project55.jpg" alt="پروژه کناف 55">
+    <img src="images/project56.jpg" alt="پروژه کناف 56">
+    <img src="images/project57.jpg" alt="پروژه کناف 57">
+    <img src="images/project58.jpg" alt="پروژه کناف 58">
+    <img src="images/project59.jpg" alt="پروژه کناف 59">
+    <img src="images/project60.jpg" alt="پروژه کناف 60">
+    <img src="images/project61.jpg" alt="پروژه کناف 61">
+    <img src="images/project62.jpg" alt="پروژه کناف 62">
+    <img src="images/project63.jpg" alt="پروژه کناف 63">
+    <img src="images/project64.jpg" alt="پروژه کناف 64">
+    <img src="images/project65.jpg" alt="پروژه کناف 65">
+    <img src="images/project66.jpg" alt="پروژه کناف 66">
+    <img src="images/project67.jpg" alt="پروژه کناف 67">
+    <img src="images/project68.jpg" alt="پروژه کناف 68">
+    <img src="images/project69.jpg" alt="پروژه کناف 69">
+    <img src="images/project70.jpg" alt="پروژه کناف 70">
+    <img src="images/project71.jpg" alt="پروژه کناف 71">
+    <img src="images/project72.jpg" alt="پروژه کناف 72">
+    <img src="images/project73.jpg" alt="پروژه کناف 73">
+    <img src="images/project74.jpg" alt="پروژه کناف 74">
+    <img src="images/project75.jpg" alt="پروژه کناف 75">
+    <img src="images/project76.jpg" alt="پروژه کناف 76">
+    <img src="images/project77.jpg" alt="پروژه کناف 77">
+    <img src="images/project78.jpg" alt="پروژه کناف 78">
+    <img src="images/project79.jpg" alt="پروژه کناف 79">
+    <img src="images/project80.jpg" alt="پروژه کناف 80">
+    <img src="images/project81.jpg" alt="پروژه کناف 81">
+    <img src="images/project82.jpg" alt="پروژه کناف 82">
+    <img src="images/project83.jpg" alt="پروژه کناف 83">
+    <img src="images/project84.jpg" alt="پروژه کناف 84">
+    <img src="images/project85.jpg" alt="پروژه کناف 85">
+    <img src="images/project86.jpg" alt="پروژه کناف 86">
+    <img src="images/project87.jpg" alt="پروژه کناف 87">
+    <img src="images/project88.jpg" alt="پروژه کناف 88">
+    <img src="images/project89.jpg" alt="پروژه کناف 89">
+    <img src="images/project90.jpg" alt="پروژه کناف 90">
+    <img src="images/project91.jpg" alt="پروژه کناف 91">
+    <img src="images/project92.jpg" alt="پروژه کناف 92">
+    <img src="images/project93.jpg" alt="پروژه کناف 93">
+    <img src="images/project94.jpg" alt="پروژه کناف 94">
+    <img src="images/project95.jpg" alt="پروژه کناف 95">
+    <img src="images/project96.jpg" alt="پروژه کناف 96">
+    <img src="images/project97.jpg" alt="پروژه کناف 97">
+    <img src="images/project98.jpg" alt="پروژه کناف 98">
+    <img src="images/project99.jpg" alt="پروژه کناف 99">
+    <img src="images/project100.jpg" alt="پروژه کناف 100">
+</div>
+
         </div>
     </div>
 </div>
